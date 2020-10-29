@@ -1,10 +1,10 @@
 function calcLateFee() {
     //get num books
-    var numBooks = parseInt(prompt("How many books?"));
+    var numBooks = parseInt($("#numBooks").val());
     //get num DVDs
-    var numDVDs = parseInt(prompt("How many DVDs?"));
+    var numDVDs = parseInt($("#numDVDs").val());
     //get days late
-    var daysLate = parseInt(prompt("How many days late?"));
+    var daysLate = parseInt($("#daysLate").val());
     //calc amt due
     var amtDue = numBooks * daysLate + numDVDs * daysLate;
     //output
@@ -12,9 +12,9 @@ function calcLateFee() {
 }
 function calcPizzaShare() {
     //get num toppings
-    var numToppings = parseInt(prompt("How many toppings?"));
+    var numToppings = parseInt($("#numToppings").val());
     //get num coworkers pitching in
-    var numCoworkers = parseInt(prompt("How many CoWorkers pitching in?"));
+    var numCoworkers = parseInt($("#numCoworkers").val());
     //calc share amount
     var shareAmt = (15.0 + 1.25 * numToppings) / numCoworkers;
     //output
